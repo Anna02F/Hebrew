@@ -1,0 +1,198 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+  position: relative;
+  z-index: 5000;
+  @extend .candara-regular;
+  .navbar {
+    border: 0 none;
+    padding: 0;
+  }
+  &:before{
+    content: '';
+    background: #ffffff;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+
+  }
+  .list-inline-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .dropdown-menu-right {
+    width: 200px;
+    padding: 15px 10px;
+  }
+
+}
+
+.sticky-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.nav-link {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #444444!important;
+
+  &.active, &:hover{
+    color:$brand-green!important;
+  }
+}
+.header-nav {
+  padding: 7px 0;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.header-nav ul {
+  margin-bottom: 0;
+}
+
+.nav-item {
+  padding: 0 10px;
+  a:not(.btn) {
+    padding: 0 10px;
+    line-height: 35px;
+    color: #444444;
+    display: block;
+  }
+}
+
+.nav-btn {
+  padding: 0 0 0 20px;
+}
+
+.nav-up {
+  -webkit-transform: translate3d(0, -63px, 0);
+  transform: translate3d(0, -63px, 0);
+  opacity: 0;
+
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.nav-down {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+  left: 0;
+  right:0;
+  top: 0;
+  z-index: 2005;
+  background: #ffffff;
+  padding: 5px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+
+  img{
+    width: auto;
+    height: 43px;
+  }
+  .nav-link {
+    font-size: 15px;
+  }
+  .btn-green {
+    font-size: 12px;
+    padding: 6px 20px;
+    margin-top: -1px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    margin-right: 0 !important;
+  }
+
+  header {
+
+    .navbar-collapse {
+      background-color:#ffffff;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+      margin-top: 10px;
+
+      position: fixed;
+      bottom: 0;
+      top: -10px;
+      right: 0;
+      height: 100vh;
+      width: 50% !important;
+      border-top: 10px solid $brand-orange;
+      overflow: auto;
+      left: -100%;
+      -webkit-transition: left 0.3s linear;
+      -o-transition: left 0.3s linear;
+      -moz-transition: left 0.3s linear;
+      transition: left 0.3s linear;
+    }
+
+    .navbar-collapse.show {
+      left: 0;
+    }
+    .nav-btn-inner {
+      background: none;
+      border: 0 none;
+      padding: 35px 30px;
+      font-size: 20px;
+      opacity: 0.3;
+      color: #444444;
+      cursor: pointer;
+    }
+    .nav-item {
+      text-align: center;
+      a:not(.btn) {
+        font-size: 18px;
+        color: #444444!important;
+        &.active{
+          color: $brand-green!important;
+        }
+      }
+      .btn{
+        font-size: 12px;
+        display: block;
+        padding: 4px;
+      }
+    }
+    .nav-btn{
+      padding-left: 0;
+    }
+    .nav-link{
+      padding: 5px 0!important;
+    }
+  }
+
+  .sticky-header .navbar-toggler {
+    border: 0 none;
+    margin-left: -15px;
+  }
+  .logo-link{
+    width: auto;
+    height: 100px;
+  }
+  .nav-down .navbar-toggler{
+    top: 3px;
+  }
+}
+@media (max-width: 579px) {
+  header .navbar-collapse{
+    width: 80% !important;
+  }
+}

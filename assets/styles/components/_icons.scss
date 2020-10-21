@@ -1,0 +1,46 @@
+.icon{
+  display: inline-block;
+  vertical-align: middle;
+}
+.arrow-right{
+   background: url("#{$images-dir}/icons/arrow-right.svg") no-repeat center center;
+   width: 38px;
+   height: 25px!important;
+   background-size: 100%!important;
+  margin-left: 10px;
+ }
+.arrow-right-w{
+  background: url("#{$images-dir}/icons/arrow-right-w.svg") no-repeat center center;
+  width: 38px;
+  height: 25px!important;
+  background-size: 100%;
+  margin-left: 10px;
+}
+.lock{
+  background: url("#{$images-dir}/icons/lock.svg") no-repeat center center;
+  width: 47px;
+  height: 54px;
+  background-size: cover;
+  margin-right: 10px;
+}
+.icon-social{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+}
+.facebook{
+  background: url("#{$images-dir}/icons/fb.svg") no-repeat center center;
+}
+.google{
+  background: url("#{$images-dir}/icons/gplus.svg") no-repeat center center;
+}
+.twitter{
+  background: url("#{$images-dir}/icons/tw.svg") no-repeat center center;
+}
+.icon-list{
+  background: url("#{$images-dir}/icons/list-icon.svg") no-repeat center center;
+  width: 27px;
+  height: 27px;
+  display: inline-block;
+  vertical-align: middle;
+}

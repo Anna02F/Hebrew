@@ -1,0 +1,67 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $brand-text;
+  @extend .candara-regular;
+  background: #fffcf7;
+  font-size: $font-size-base;
+  line-height: 20px;
+  position: relative;
+  padding: 20px 0 0 0;
+  border-bottom: 20px solid $brand-orange;
+
+  &:after{
+    content: '';
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: $brand-orange;
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 20px;
+    background: url("#{$images-dir}/wood.jpg") repeat-y scroll;
+    background-size: contain;
+    opacity: 0.2;
+    z-index: -1;
+  }
+}
+
+p{
+  color: $brand-text;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: $brand-text;
+  @extend .days-regular;
+}
+
+dd {
+    margin-left: 25px;
+}
+
+a{
+  color: $brand-orange;
+}
+@media (max-width: 992px) {
+  .corners-l:before,.corners-r:before{
+    width: 10px;
+  }
+  .corners-l:after,.corners-r:after{
+    height: 10px;
+  }
+  body{
+    border-bottom-width: 10px;
+  }
+  body:after{
+    height: 10px;
+  }
+
+}

@@ -1,0 +1,209 @@
+
+.btn {
+  font-weight: 600;
+  line-height: 22px;
+  @extend .days-regular;
+  padding: 15px 30px;
+  font-size: 20px;
+  position: relative;
+
+  i {
+    position: absolute;
+    left: 100%;
+    top: -2px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    i {
+      left: 103%;
+    }
+  }
+  span{
+    position: relative;
+    z-index: 2;
+    display: block;
+  }
+
+
+
+}
+
+.btn:focus, .btn.focus {
+  box-shadow: none;
+}
+
+.btn-lg {
+  font-size: 25px;
+  min-width: 350px;
+  padding: 22px 30px;
+  text-align: left;
+}
+
+.btn-green {
+  font-size: 15px;
+  padding: 8px 20px;
+  margin-top: -3px;
+  border-radius: 3px !important;
+  background: $brand-green;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #ffffff;
+  &:hover, &:active, &:focus {
+    color: #ffffff;
+  }
+}
+
+.btn-orange {
+  border-radius: 6px;
+  color: $brand-brown;
+  background-color: #f9bf30;
+  text-align: left;
+  min-width: 250px;
+  padding:20px 70px 20px 20px;
+
+  &:hover, &:active, &:focus {
+    color: #ffffff;
+    background-color: transparent;
+
+    .arrow-right{
+      background: url("#{$images-dir}/icons/arrow-right-w.svg") no-repeat center center;
+    }
+  }
+  &.btn-sm{
+    padding: 10px 40px 10px 15px;
+  }
+  &:before {
+    background: rgba($brand-green, 0.8);
+  }
+  &:after {
+    background: $brand-green;
+  }
+}
+
+.btn-white-lined {
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  @extend .days-regular;
+  text-align: left;
+  min-width: 300px;
+  padding:20px  60px 20px 20px;
+
+  &:hover, &:active, &:focus {
+    color: #ffffff;
+    border-color: $brand-green;
+
+    .arrow-right{
+      background: url("#{$images-dir}/icons/arrow-right-w.svg") no-repeat center center;
+    }
+  }
+
+  &:before {
+    background: rgba(#f9bf30, 0.8);
+  }
+  &:after {
+    background: #f9bf30;
+  }
+}
+
+.btn-sm {
+  font-size: 15px;
+  min-width: 155px;
+  padding: 10px 15px;
+
+  i {
+    width: 20px;
+    height: 13px;
+  }
+  &:hover{
+    i{
+      margin-right: -5px;
+    }
+  }
+}
+
+.hover-book{
+  overflow: hidden;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 100%;
+    z-index: 1;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  }
+  &:hover:before, &:hover:after,
+  &:active:before, &:active:after,
+  &:focus:before, &:focus:after{
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  &:hover:after,&:active:after,&:focus:after{
+    -webkit-transition-delay: 0.175s;
+    transition-delay: 0.175s;
+  }
+}
+.hover-pulse{
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  position: relative;
+
+  &:before{
+    content: '';
+    z-index: 1;
+    border-radius: inherit;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    border: 2px solid $brand-green;
+  }
+  &:hover:before{
+    animation: pulse 0.2s ease-in-out;
+  }
+}
+@keyframes pulse {
+  0%{
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.2, 1.1);
+    transform: scale3d(1.1, 1.2, 1.1);
+  }
+  100%{
+    opacity: 0;
+    -webkit-transform: scale3d(1.3, 1.3, 1.3);
+    transform: scale3d(1.3, 1.3, 1.3);
+  }
+}
+@media (max-width: 992px) {
+  .btn-lg {
+    font-size: 20px;
+    min-width: 350px;
+    padding: 20px 50px 20px 30px;
+  }
+
+  .btn {
+    padding: 10px 50px 10px 20px;
+    font-size: 15px;
+    min-width: 0;
+    i {
+      width: 25px;
+    }
+  }
+}

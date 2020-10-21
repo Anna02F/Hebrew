@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+} 
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: $brand-blue;
+  text-decoration: none;
+  @extend .transition-default;
+}
+a:hover{
+  text-decoration: none;
+  color: $brand-blue;
+}
+p{
+  color: $brand-text;
+}
+button, input, .select2-container{
+  outline: none!important;
+}
+.form-control:focus{
+  box-shadow: none;
+}
+img{
+	max-width: 100%;
+}

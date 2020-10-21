@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+// Font mixins
+@include font("Days-Regular", "Days-Regular", days);
+@include font("Candara-Regular", "Candara-Regular", candara);
+
+.days-regular {
+  font-family: "Days-Regular", sans-serif;
+}
+
+.candara-regular {
+  font-family: "Candara-Regular", sans-serif;
+}
