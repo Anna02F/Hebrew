@@ -1,408 +1,666 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Title</title>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
     <!--Start Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="assets/plugins/font-awesome/css/font-awesome.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/plugins/font-awesome/css/font-awesome.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 
     <!--Start SEO-->
-    <meta name="description" content="Content">
-    <meta name="author" content="Title"/>
-    <meta property="og:url" content="https://www.url.com"/>
-    <meta property="og:title" content="Title"/>
-    <meta property="og:image" content="https://www.url.com/images/logo.svg"/>
-    <meta property="og:site_name" content="Title"/>
-    <meta property="og:description" content="Title"/>
-    <meta property="og:type" content="website"/>
-</head>
-<body class="has-fixed-header bg-mobile">
-<div class="loading" id="js-loader">
-    <div class="loading-wrapper">
+    <meta name="description" content="Content" />
+    <meta name="author" content="Title" />
+    <meta property="og:url" content="https://www.url.com" />
+    <meta property="og:title" content="Title" />
+    <meta property="og:image" content="https://www.url.com/images/logo.svg" />
+    <meta property="og:site_name" content="Title" />
+    <meta property="og:description" content="Title" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="has-fixed-header bg-mobile">
+    <div class="loading" id="js-loader">
+      <div class="loading-wrapper">
         <div class="loader book">
-            <span class="page"></span>
-            <span class="page"></span>
-            <span class="page"></span>
+          <span class="page"></span>
+          <span class="page"></span>
+          <span class="page"></span>
         </div>
         <h1 class="loader-headline">Reading</h1>
+      </div>
     </div>
-</div>
-<!--Start Header-->
-<header class="clearfix sticky-header">
-    <div class="container">
-        <nav class="navbar navbar-light navbar-expand-lg bg-faded" itemscope
-             itemtype="http://schema.org/Organization" id="mainNav">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="true"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <!--Start Header-->
+    <header class="clearfix sticky-header">
+      <div class="container">
+        <nav
+          class="navbar navbar-light navbar-expand-lg bg-faded"
+          itemscope
+          itemtype="http://schema.org/Organization"
+          id="mainNav"
+        >
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsingNavbar"
+            aria-controls="collapsingNavbar"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Start Menu-->
+          <div class="navbar-brand d-flex">
+            <a class="navbar-brand" itemprop="url" href="index.html">
+              <img
+                src="assets/images/logo.svg"
+                class="logo-link"
+                alt="Logo"
+                itemprop="logo"
+                width="150"
+              />
+            </a>
+          </div>
+          <ul class="nav navbar-nav justify-content-end show-mobile">
+            <li class="nav-item nav-btn">
+              <a class="btn btn-green hover-pulse" href=""> SIGN UP </a>
+            </li>
+          </ul>
+          <div class="navbar-collapse collapse w-100" id="nav-main">
+            <button
+              class="nav-btn-inner show-mobile"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapsingNavbar"
+              aria-controls="collapsingNavbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa fa-close"></i>
             </button>
-            <!--Start Menu-->
-            <div class="navbar-brand d-flex">
-                <a class="navbar-brand" itemprop="url" href="index.html">
-                    <img src="assets/images/logo.svg"
-                         class="logo-link" alt="Logo" itemprop="logo" width="150">
-                </a>
-            </div>
-            <ul class="nav navbar-nav justify-content-end show-mobile">
-                <li class="nav-item nav-btn">
-                    <a class="btn btn-green hover-pulse" href=""> SIGN UP </a>
-                </li>
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger active" href="#section1"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="">UPCOMING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="">SUBSCRIBE</a>
+              </li>
+              <li class="nav-item nav-btn hide-mobile">
+                <a class="btn btn-green hover-pulse" href=""> SIGN UP </a>
+              </li>
             </ul>
-            <div class="navbar-collapse collapse w-100" id="nav-main">
-                <button class="nav-btn-inner show-mobile" type="button" data-toggle="collapse"
-                        data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <i class="fa fa-close"></i></button>
-                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger active" href="#section1">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="">UPCOMING</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="">CONTACT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="">SUBSCRIBE</a>
-                    </li>
-                    <li class="nav-item nav-btn hide-mobile">
-                        <a class="btn btn-green hover-pulse" href=""> SIGN UP </a>
-                    </li>
-                </ul>
-            </div>
+          </div>
         </nav>
-        <div class="navbar-collapse collapse w-100 js-nav-xs-inner" id="collapsingNavbar"></div>
-    </div>
-</header>
-<!--End Header-->
+        <div
+          class="navbar-collapse collapse w-100 js-nav-xs-inner"
+          id="collapsingNavbar"
+        ></div>
+      </div>
+    </header>
+    <!--End Header-->
 
-<div class="wrapper">
-    <div class="jumbotron-intro">
+    <div class="wrapper">
+      <div class="jumbotron-intro">
         <div class="container container-jumbotron">
-            <div class="row">
-                <div class="jumbotron-text col-lg-5 col-xs-12">
-                    <h1 class="jumbotron-headline">Start your<br><span> Journey</span></h1>
-                    <p>Lorem ipsum is simply dummy text of the
-                        Printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard
-                        Dummy text ever since the 1500s.</p>
-                    <a href="" class="btn btn-orange btn-block btn-lg hover-book">
-                        <span>Let’s get started <i
-                                class="icon arrow-right pull-right"></i></span></a>
-                </div>
-                <div class="col-md-7 col-xs-12 hide-mobile">
-                    <div class="shelf">
-                        <div class="book1"></div>
-                        <div class="book1"></div>
-                        <div class="book1"></div>
-                        <div class="book1"></div>
-                        <div class="book1"></div>
-                        <div class="book1"></div>
-                        <div class="book1"></div>
-                    </div>
-                    <div class="shelf-btm">
-                        <div class="book2"></div>
-                        <div class="book2"></div>
-                        <div class="book2"></div>
-                    </div>
-                </div>
+          <div class="row">
+            <div class="jumbotron-text col-lg-5 col-xs-12">
+              <h1 class="jumbotron-headline">
+                Start your<br /><span> Journey</span>
+              </h1>
+              <p>
+                Lorem ipsum is simply dummy text of the Printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard Dummy
+                text ever since the 1500s.
+              </p>
+              <a href="" class="btn btn-orange btn-block btn-lg hover-book">
+                <span
+                  >Let’s get started
+                  <i class="icon arrow-right pull-right"></i></span
+              ></a>
             </div>
+            <div class="col-md-7 col-xs-12 hide-mobile">
+              <div class="shelf">
+                <div class="book1"></div>
+                <div class="book1"></div>
+                <div class="book1"></div>
+                <div class="book1"></div>
+                <div class="book1"></div>
+                <div class="book1"></div>
+                <div class="book1"></div>
+              </div>
+              <div class="shelf-btm">
+                <div class="book2"></div>
+                <div class="book2"></div>
+                <div class="book2"></div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="section clearfix section-process" id="section1">
+      </div>
+      <div class="section clearfix section-process" id="section1">
         <div class="container">
-            <h1 class="headline-1">WHO WE ARE</h1>
-            <div class="std-text">
-                <p>Lorem ipsum is simply dummy text of the Printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard Dummy text ever since the 1500s. Dummy text ever since the 1500s.
-                    Dummy text ever since the 1500s. Dummy text ever since the 1500s.
-                </p>
-            </div>
-            <a href="" class="btn btn-orange hover-book"><span>Know more <i
-                    class="icon arrow-right pull-right"></i></span></a>
+          <h1 class="headline-1">WHO WE ARE</h1>
+          <div class="std-text">
+            <p>
+              Lorem ipsum is simply dummy text of the Printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard Dummy text
+              ever since the 1500s. Dummy text ever since the 1500s. Dummy text
+              ever since the 1500s. Dummy text ever since the 1500s.
+            </p>
+          </div>
+          <a href="" class="btn btn-orange hover-book"
+            ><span>Know more <i class="icon arrow-right pull-right"></i></span
+          ></a>
         </div>
-    </div>
-    <div class="section-calltoaction">
+      </div>
+      <div class="section-calltoaction">
         <div class="container">
-            <div class="d-flex flex-justify">
-                <div>
-                    <p class="text-lg">Lorem ipsum is simply dummy</p>
-                </div>
-                <div>
-                    <a href="" class="btn btn-white-lined hover-book"><span>Subscribe now <i
-                            class="icon arrow-right arrow-right-w pull-right"></i></span></a>
-                </div>
+          <div class="d-flex flex-justify">
+            <div>
+              <p class="text-lg">Lorem ipsum is simply dummy</p>
             </div>
+            <div>
+              <a href="" class="btn btn-white-lined hover-book"
+                ><span
+                  >Subscribe now
+                  <i
+                    class="icon arrow-right arrow-right-w pull-right"
+                  ></i></span
+              ></a>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="section section-works">
+      </div>
+      <div class="section section-works">
         <div class="container">
-            <h2 class="headline-1 text-green">HOW IT WORKS</h2>
-            <div class="lines">
-                <div class="show-ms lines-bg"></div>
-                <svg version="1.1" id="lines" class="hide-mobile hide-ms" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="809px" height="2676px" viewBox="0 0 809 3260" enable-background="new 0 0 809 2676" xml:space="preserve">
-<path id="path1" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M5.5,0.5v78"/>
-<path id="path2" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M5.5,492.5v-78"/>
-<path id="path3" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M0.5,492.5h809"/>
-<path id="path4" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M804.5,488.5v78"/>
-<path id="path5" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M804.5,871.5v78"/>
-<path id="path6" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M0.5,949.5h809"/>
-<path id="path7" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M5.5,1023.5v-78"/>
-<path id="path8" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M5.5,1396.5v78"/>
-<path id="path9" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M0.5,1474.5h809"/>
-<path id="path10" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M804.5,1470.5v78"/>
-<path id="path11" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M803.5,1874.5v78"/>
-<path id="path12" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M-0.5,1952.5h809"/>
-<path id="path13" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M4.5,2026.5v-78"/>
-<path id="path14" fill="none" stroke="#634033" stroke-width="10" stroke-miterlimit="10" d="M6.5,2384.5v134"/>
-</svg>
-                <div class="row works-item">
-                    <div class="col-lg-5 text-center col-xs-12">
-                        <img alt="" src="assets/images/gear.png" width="260">
+          <h2 class="headline-1 text-green">HOW IT WORKS</h2>
+          <div class="lines">
+            <div class="show-ms lines-bg"></div>
+            <svg
+              version="1.1"
+              id="lines"
+              class="hide-mobile hide-ms"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="809px"
+              height="2676px"
+              viewBox="0 0 809 3260"
+              enable-background="new 0 0 809 2676"
+              xml:space="preserve"
+            >
+              <path
+                id="path1"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M5.5,0.5v78"
+              />
+              <path
+                id="path2"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M5.5,492.5v-78"
+              />
+              <path
+                id="path3"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M0.5,492.5h809"
+              />
+              <path
+                id="path4"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M804.5,488.5v78"
+              />
+              <path
+                id="path5"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M804.5,871.5v78"
+              />
+              <path
+                id="path6"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M0.5,949.5h809"
+              />
+              <path
+                id="path7"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M5.5,1023.5v-78"
+              />
+              <path
+                id="path8"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M5.5,1396.5v78"
+              />
+              <path
+                id="path9"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M0.5,1474.5h809"
+              />
+              <path
+                id="path10"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M804.5,1470.5v78"
+              />
+              <path
+                id="path11"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M803.5,1874.5v78"
+              />
+              <path
+                id="path12"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M-0.5,1952.5h809"
+              />
+              <path
+                id="path13"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M4.5,2026.5v-78"
+              />
+              <path
+                id="path14"
+                fill="none"
+                stroke="#634033"
+                stroke-width="10"
+                stroke-miterlimit="10"
+                d="M6.5,2384.5v134"
+              />
+            </svg>
+            <div class="row works-item">
+              <div class="col-lg-5 text-center col-xs-12">
+                <img alt="" src="assets/images/gear.png" width="260" />
+              </div>
+              <div class="col-lg-6 col-xs-12">
+                <div class="box-w">
+                  <div class="box-inner">
+                    <h2 class="headline-1 text-gray">Headline about Process</h2>
+                    <div class="std-text-d">
+                      <p class="mb-20">
+                        Lorem ipsum is simply dummy text of the Printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard Dummy text ever since the 1500s.
+                      </p>
+                      <p>
+                        <strong>Shipping is FREE</strong>
+                        <a href="" class="link-more">know more &#62;&#62;</a>
+                      </p>
                     </div>
-                    <div class="col-lg-6 col-xs-12">
-                        <div class="box-w">
-                            <div class="box-inner">
-                                <h2 class="headline-1 text-gray">Headline about Process</h2>
-                                <div class="std-text-d">
-                                    <p class="mb-20">Lorem ipsum is simply dummy text of the Printing and
-                                        typesetting industry. Lorem Ipsum has been the industry's
-                                        standard Dummy text ever since the 1500s.
-                                    </p>
-                                    <p><strong>Shipping is FREE</strong> <a href="" class="link-more">know more
-                                        &#62;&#62;</a></p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <div class="row works-item">
-                    <div class="col-1"></div>
-                    <div class="col-lg-6 col-xs-12 order-2-xs">
-                        <div class="box-w">
-                            <div class="box-inner">
-                                <h2 class="headline-1 text-gray">Delivery</h2>
-                                <div class="std-text-d">
-                                    <ul class="list-unstyled home-list clearfix">
-                                        <li><i class="icon-list"></i> Process item</li>
-                                        <li><i class="icon-list"></i> Process item</li>
-                                        <li><i class="icon-list"></i> Process item</li>
-                                        <li><i class="icon-list"></i> Process item</li>
-                                        <li><i class="icon-list"></i> Process item</li>
-                                        <li><i class="icon-list"></i> Process item</li>
-                                    </ul>
-                                    <p class="mb-20">Lorem ipsum is simply dummy <a href="" class="link-more">know more
-                                        &#62;&#62;</a>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="col-lg-3 col-xs-12 text-center order-1-xs">
-                        <img alt="" src="assets/images/clock.png" width="260">
-                    </div>
-                </div>
-                <div class="row works-item">
-                    <div class="col-lg-5 col-xs-12 text-center">
-                        <img alt="" src="assets/images/books-type.png" width="244">
-                    </div>
-                    <div class="col-lg-6 col-xs-12">
-                        <div class="box-w">
-                            <div class="box-inner">
-                                <h2 class="headline-1 text-gray">Book Types</h2>
-                                <div class="std-text-d">
-                                    <p class="mb-20">Lorem ipsum is simply dummy text.
-                                    </p>
-                                    <ul class="list-unstyled home-list clearfix">
-                                        <li><i class="icon-list"></i> Process item</li>
-                                        <li><i class="icon-list"></i> Process item</li>
-                                        <li><i class="icon-list"></i> Process item</li>
-                                        <li><i class="icon-list"></i> Process item</li>
-                                        <li><i class="icon-list"></i> Process item</li>
-                                        <li><i class="icon-list"></i> Process item</li>
-                                    </ul>
-                                    <p class="mb-20">Lorem ipsum is simply dummy <a href="" class="link-more">know more
-                                        &#62;&#62;</a>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row works-item">
-                    <div class="col-lg-7 col-xs-12 order-2-xs">
-                        <div class="box-w">
-                            <div class="box-inner">
-                                <h2 class="headline-1 text-gray">Upcoming</h2>
-                                <div class="event-item">
-                                    <div class="media">
-                                        <div class="align-self-start mr-3">
-                                            <span class="event-headline">15 <span>June</span></span>
-                                        </div>
-                                        <div class="media-body event-body">
-                                            <a href=""
-                                               class="btn btn-orange hover-book pull-right btn-sm order-2-xs"><span>Know more <i
-                                                    class="icon arrow-right pull-right"></i></span></a>
-                                            <div class="order-1-xs">
-                                                <h5 class="mt-0 event-body-headline">Name of the Book</h5>
-                                                Volume, Publisher name
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="event-item">
-                                    <div class="media">
-                                        <div class="align-self-start mr-3">
-                                            <span class="event-headline">25 <span>Aug</span></span>
-                                        </div>
-                                        <div class="media-body event-body">
-                                            <a href=""
-                                               class="btn btn-orange hover-book pull-right btn-sm order-2-xs"><span>Know more <i
-                                                    class="icon arrow-right pull-right"></i></span></a>
-                                            <div class="order-1-xs">
-                                                <h5 class="mt-0 event-body-headline">Name of the Book</h5>
-                                                Volume, Publisher name
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="col-lg-3 col-xs-12 text-center order-1-xs">
-                        <img alt="" src="assets/images/events.png" width="260">
-                    </div>
-                </div>
-                <div class="row works-item">
-                    <div class="col-lg-5 col-xs-12 text-center">
-                        <img alt="" src="assets/images/programs.png" width="230">
-                    </div>
-                    <div class="col-lg-6 col-xs-12">
-                        <div class="box-w">
-                            <div class="box-inner">
-                                <h2 class="headline-1 text-gray">Multiple programs</h2>
-                                <div class="std-text-d">
-                                    <p class="mb-20">Lorem ipsum is simply dummy text of the Printing and
-                                        typesetting industry. Lorem Ipsum has been the industry's
-                                        standard Dummy text ever since the 1500s. Dummy text
-                                        ever since the 1500s. Dummy text ever since the 1500s.
-                                        Dummy text ever since the 1500s.<a href="" class="link-more">know more
-                                            &#62;&#62;</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="btn-wrapper">
-                <a href="" class="btn btn-orange btn-lg hover-book"><span>Subscribe now <i
-                        class="icon arrow-right pull-right"></i></span></a>
+            <div class="row works-item">
+              <div class="col-1"></div>
+              <div class="col-lg-6 col-xs-12 order-2-xs">
+                <div class="box-w">
+                  <div class="box-inner">
+                    <h2 class="headline-1 text-gray">Delivery</h2>
+                    <div class="std-text-d">
+                      <ul class="list-unstyled home-list clearfix">
+                        <li><i class="icon-list"></i> Process item</li>
+                        <li><i class="icon-list"></i> Process item</li>
+                        <li><i class="icon-list"></i> Process item</li>
+                        <li><i class="icon-list"></i> Process item</li>
+                        <li><i class="icon-list"></i> Process item</li>
+                        <li><i class="icon-list"></i> Process item</li>
+                      </ul>
+                      <p class="mb-20">
+                        Lorem ipsum is simply dummy
+                        <a href="" class="link-more">know more &#62;&#62;</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-lg-3 col-xs-12 text-center order-1-xs">
+                <img alt="" src="assets/images/clock.png" width="260" />
+              </div>
             </div>
+            <div class="row works-item">
+              <div class="col-lg-5 col-xs-12 text-center">
+                <img alt="" src="assets/images/books-type.png" width="244" />
+              </div>
+              <div class="col-lg-6 col-xs-12">
+                <div class="box-w">
+                  <div class="box-inner">
+                    <h2 class="headline-1 text-gray">Book Types</h2>
+                    <div class="std-text-d">
+                      <p class="mb-20">Lorem ipsum is simply dummy text.</p>
+                      <ul class="list-unstyled home-list clearfix">
+                        <li><i class="icon-list"></i> Process item</li>
+                        <li><i class="icon-list"></i> Process item</li>
+                        <li><i class="icon-list"></i> Process item</li>
+                        <li><i class="icon-list"></i> Process item</li>
+                        <li><i class="icon-list"></i> Process item</li>
+                        <li><i class="icon-list"></i> Process item</li>
+                      </ul>
+                      <p class="mb-20">
+                        Lorem ipsum is simply dummy
+                        <a href="" class="link-more">know more &#62;&#62;</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row works-item">
+              <div class="col-lg-7 col-xs-12 order-2-xs">
+                <div class="box-w">
+                  <div class="box-inner">
+                    <h2 class="headline-1 text-gray">Upcoming</h2>
+                    <div class="event-item">
+                      <div class="media">
+                        <div class="align-self-start mr-3">
+                          <span class="event-headline"
+                            >15 <span>June</span></span
+                          >
+                        </div>
+                        <div class="media-body event-body">
+                          <a
+                            href=""
+                            class="btn btn-orange hover-book pull-right btn-sm order-2-xs"
+                            ><span
+                              >Know more
+                              <i class="icon arrow-right pull-right"></i></span
+                          ></a>
+                          <div class="order-1-xs">
+                            <h5 class="mt-0 event-body-headline">
+                              Name of the Book
+                            </h5>
+                            Volume, Publisher name
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="event-item">
+                      <div class="media">
+                        <div class="align-self-start mr-3">
+                          <span class="event-headline"
+                            >25 <span>Aug</span></span
+                          >
+                        </div>
+                        <div class="media-body event-body">
+                          <a
+                            href=""
+                            class="btn btn-orange hover-book pull-right btn-sm order-2-xs"
+                            ><span
+                              >Know more
+                              <i class="icon arrow-right pull-right"></i></span
+                          ></a>
+                          <div class="order-1-xs">
+                            <h5 class="mt-0 event-body-headline">
+                              Name of the Book
+                            </h5>
+                            Volume, Publisher name
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-lg-3 col-xs-12 text-center order-1-xs">
+                <img alt="" src="assets/images/events.png" width="260" />
+              </div>
+            </div>
+            <div class="row works-item">
+              <div class="col-lg-5 col-xs-12 text-center">
+                <img alt="" src="assets/images/programs.png" width="230" />
+              </div>
+              <div class="col-lg-6 col-xs-12">
+                <div class="box-w">
+                  <div class="box-inner">
+                    <h2 class="headline-1 text-gray">Multiple programs</h2>
+                    <div class="std-text-d">
+                      <p class="mb-20">
+                        Lorem ipsum is simply dummy text of the Printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard Dummy text ever since the 1500s.
+                        Dummy text ever since the 1500s. Dummy text ever since
+                        the 1500s. Dummy text ever since the 1500s.<a
+                          href=""
+                          class="link-more"
+                          >know more &#62;&#62;</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-wrapper">
+            <a href="" class="btn btn-orange btn-lg hover-book"
+              ><span
+                >Subscribe now <i class="icon arrow-right pull-right"></i></span
+            ></a>
+          </div>
         </div>
-    </div>
-    <div class="section section-program">
+      </div>
+      <div class="section section-program">
         <div class="container container-sm">
-            <h2 class="headline-1 text-center"><span>CHOOSE</span> YOUR PROGRAM</h2>
-            <div class="d-flex flex-center pb-40">
-                <div class="program-item">
-                    <select class="js-select" style="width: 100%;">
-                        <option>Program name</option>
-                    </select>
-                </div>
-                <a href="" class="btn btn-orange hover-book"><span>Go to subscription <i
-                        class="icon arrow-right arrow-right pull-right"></i></span></a>
+          <h2 class="headline-1 text-center">
+            <span>CHOOSE</span> YOUR PROGRAM
+          </h2>
+          <div class="d-flex flex-center pb-40">
+            <div class="program-item">
+              <select class="js-select" style="width: 100%">
+                <option>Program name</option>
+              </select>
             </div>
-            <div class="d-flex flex-center-v secure">
-                <i class="lock"></i>
-                <div class="std-text-d">
-                    <p>All purchases are secured by (name), additional text.</p>
-                </div>
+            <a href="" class="btn btn-orange hover-book"
+              ><span
+                >Go to subscription
+                <i class="icon arrow-right arrow-right pull-right"></i></span
+            ></a>
+          </div>
+          <div class="d-flex flex-center-v secure">
+            <i class="lock"></i>
+            <div class="std-text-d">
+              <p>All purchases are secured by (name), additional text.</p>
             </div>
-
+          </div>
         </div>
-
-
+      </div>
     </div>
-
-
-</div>
-<!--Start Footer-->
-<footer>
-    <div class="scroll-to-top js-scroll-top-top">
+    <!--Start Footer-->
+    <footer>
+      <div class="scroll-to-top js-scroll-top-top">
         <span class="scroll-to-top__icon"></span>
-    </div>
-    <div class="container footer__inner">
+      </div>
+      <div class="container footer__inner">
         <div class="clearfix justify-content-between">
-            <div class="footer-btm-item pull-left">
-                <p>© 2018 <a href="">SITENAME</a>. All rights reserved. Powered by <a href="http://webarysites.com/">WEBARY</a>
-                </p>
-            </div>
-            <div class="footer-btm-item pull-right">
-                <ul class="nav list-inline footer-list">
-                    <li class="list-inline-item">
-                        <a href=" " class="footer-link" title="Terms Of Use">HOME</a></li>
-                    <li class="list-inline-item">
-                        <a href=" " class="footer-link" title="Privacy Policy">ABOUT US</a></li>
-                    <li class="list-inline-item"><a href=" " class="footer-link" title="Terms Of Use">UPCOMING</a></li>
-                    <li class="list-inline-item"><a href=" " class="footer-link" title="Terms Of Use">CONTACT US</a>
-                    </li>
-                    <li class="list-inline-item"><a href=" " class="footer-link" title="Terms Of Use">SUBSCRIBE</a></li>
-                </ul>
-                <ul class="list-inline socials mt-20">
-                    <li>FIND US</li>
-                    <li><a href="#"><i class="icon-social facebook"></i></a></li>
-                    <li><a href="#"><i class="icon-social google"></i></a></li>
-                    <li><a href="#"><i class="icon-social twitter"></i></a></li>
-                </ul>
-            </div>
+          <div class="footer-btm-item pull-left">
+            <p>
+              © 2020 <a href="">SITENAME</a>. All rights reserved. Powered by
+              <a href="http://webarysites.com/">WEBARY</a>
+            </p>
+          </div>
+          <div class="footer-btm-item pull-right">
+            <ul class="nav list-inline footer-list">
+              <li class="list-inline-item">
+                <a href=" " class="footer-link" title="Terms Of Use">HOME</a>
+              </li>
+              <li class="list-inline-item">
+                <a href=" " class="footer-link" title="Privacy Policy"
+                  >ABOUT US</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href=" " class="footer-link" title="Terms Of Use"
+                  >UPCOMING</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href=" " class="footer-link" title="Terms Of Use"
+                  >CONTACT US</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href=" " class="footer-link" title="Terms Of Use"
+                  >SUBSCRIBE</a
+                >
+              </li>
+            </ul>
+            <ul class="list-inline socials mt-20">
+              <li>FIND US</li>
+              <li>
+                <a href="#"><i class="icon-social facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-social google"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-social twitter"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-</footer>
-<!--End Footer-->
-<script src="assets/plugins/jquery/jquery-1.11.2.min.js"></script>
-<script src="assets/plugins/bootstrap-4/js/bootstrap.bundle.min.js"></script>
-<script src="assets/plugins/select2/select2.full.min.js"></script>
-<script src="assets/plugins/jquery/jquery.easing.min.js"></script>
-<script src="assets/plugins/lightslider/lightslider.min.js"></script>
-<script src="assets/plugins/gsap/TweenMax.min.js"></script>
-<script src="assets/js/main.js"></script>
-</body>
+      </div>
+    </footer>
+    <!--End Footer-->
+    <script src="assets/plugins/jquery/jquery-1.11.2.min.js"></script>
+    <script src="assets/plugins/bootstrap-4/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/select2/select2.full.min.js"></script>
+    <script src="assets/plugins/jquery/jquery.easing.min.js"></script>
+    <script src="assets/plugins/lightslider/lightslider.min.js"></script>
+    <script src="assets/plugins/gsap/TweenMax.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
-
-
-

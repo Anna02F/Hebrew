@@ -1,0 +1,138 @@
+.font(Lato-Light,lato-light);
+.font(Lato-Regular,lato-regular);
+.font(Lato-Semibold,lato-semibold);
+.font(Lato-Bold,lato-bold);
+.font(Lato-Heavy,lato-heavy);
+.font(Segoe-ui-Light,segoe-light);
+.font(FrutigerCE55Roman,frutiger);
+//.font(FrutigerLTExtraBlack,frutiger);
+
+body,html{
+    height: 100%;
+}
+footer{
+    padding: 30px;
+    height: 80px;
+    .text-center;
+    font-size: 18px;
+    border-top: 1px solid @border-color;
+}
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -80px;
+    &:after{
+        content: "";
+        display: block;
+        height: 80px;
+    }
+}
+body{
+    font: 13px Lato, Arial, sans-serif;
+    background: @brand-light;
+    color: @brand-dark;
+
+
+}
+.navbar{
+    margin-bottom: 0;
+}
+.navbar-brand{
+    height: auto;
+}
+header{
+    border-bottom: 1px solid @border-color;
+}
+.navbar-nav {
+    > li {
+        > a{
+            color: #666666;
+        }
+        &.active{
+            > a{
+                color: @brand-dark;
+            }
+        }
+    }
+}
+.sub-heading{
+    margin-bottom: 25px;
+
+    span{
+        display: inline-block;
+    }
+}
+.sub-heading-b{
+    font-family: Lato-Bold, Arial;
+}
+.text-sub{
+    font-family: Lato-Light, Arial;
+    font-size: 25px;
+}
+.has-border{
+    &:after{
+        content: '';
+        display: block;
+        width: 110px;
+        height: 3px;
+        margin: 7px auto;
+        background: @item-bg;
+    }
+}
+.section-banner{
+    padding: 45px 0;
+}
+.section-banner-lg{
+    padding: 95px 0;
+}
+.input-holder {
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    color: @brand-dark;
+    padding: 6px 15px;
+    .text-left;
+    cursor: auto;
+    font-size: 20px;
+    z-index: 1;
+    line-height: 30px;
+}
+
+.text-danger{
+    color: #ff3333;
+}
+//Buttons
+.btn{
+    font-size: 20px;
+    height: 55px;
+    .text-uppercase;
+    line-height: 40px;
+}
+.btn-light{
+    background: transparent;
+    border: 2px solid @brand-light;
+    color: @brand-light;
+    &:hover{
+        background: @brand-light;
+    }
+}
+.btn-sub{
+    background: transparent;
+    border: 2px solid @item-bg;
+    color: @item-bg;
+    min-width: 188px;
+
+    &:hover{
+        background: @item-bg;
+        color: @brand-light;
+    }
+}
+.news-details .fa-bookmark{
+    color: #aaaaaa;
+    font-size: 20px;
+
+    &:hover{
+        color: @item-bg;
+    }
+}

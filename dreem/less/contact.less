@@ -1,0 +1,64 @@
+@banner-minHeight: 445px;
+.section-contact{
+    background: url("@{base-url}/contact-bg.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: @banner-minHeight; 
+}
+.heading-left{
+    &:after{
+        margin: 7px 0;
+    }
+}
+.content-pages{
+    h1{
+        font-size: 40px;
+    }
+}
+.form-contact{
+    margin:38px 0;
+}
+.block-message textarea.form-control{
+    height: 44px;
+    width: 100%;
+}
+.page-btn{
+    min-width: auto;
+    padding: 0 30px;
+    color: @brand-dark;
+}
+.form-contact .block-required{
+    margin-left: 0;
+    &:nth-child(2n){
+        margin-right: 0;
+    }
+}
+
+.block-callUs{
+    border: 2px solid @brand-dark;
+    border-radius: 3px;
+    padding: 20px;
+}
+.text-help{
+    font-size: 25px;
+}
+.icon-contact{
+    margin-right: 6px;
+
+    img{
+        display: block;
+    }
+}
+.form-contact .block-message{
+    width: 100%;
+}
+.el-number{
+    font-size: 35px;
+}
+.has-border-right,.block-contact{
+    padding: 0;
+}
+.icon-phone{
+    width: 50px;
+    height: 50px;
+    background-position: 0 0; 
+}

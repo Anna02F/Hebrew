@@ -1,0 +1,329 @@
+.navbar-toggle .icon-bar{
+    background: #0066cc;
+    width: 45px;
+    height: 4px;
+    margin-top: 10px;
+}
+header .container{
+    padding:0;
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1090px;
+    }
+    .news-details{
+        >div{
+            margin: 0 15px;
+        }
+    }
+    #owl-news {
+        .owl-item{
+            margin-right: 17px;
+        }
+    }
+    .form-contact .block-required{
+        margin: 0 20px 25px 0;
+    }
+    .news-img{
+        min-height: 233px;
+    }
+    //Services
+    .service-banner{
+        min-height: 265px;
+    }
+}
+@media (min-width: 992px){
+
+    .heading-register{
+        font-size: 55px;
+    }
+    .form-control,.btn-light{
+        min-width: 340px;
+    }
+    header{
+        position: fixed;
+        background: @brand-light;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    .intro-top{
+        padding-top: 81px;  
+    }
+    //Contact
+    .form-control-sm{
+        min-width: 321px;
+    } 
+
+}
+@media (min-width: 769px){
+    .no-padding{
+        padding:0;
+    }
+}
+@media (min-width: 768px){
+    .navbar-right {
+        margin-right: -14px;
+    }
+}
+@media (min-width: 767px){
+    .navbar-brand{
+        margin-top: 8px;
+    }
+    .navbar{
+        border:0 none;
+        margin-bottom: 0;
+    }
+    .navbar-nav {
+        > li {
+            position: relative;
+            > a{
+                text-transform: uppercase;
+                position: relative;
+                padding: 30px 20px;
+                -webkit-transition: all .25s ease-in-out;
+                -moz-transition: all .25s ease-in-out;
+                -o-transition:all .25s ease-in-out;
+
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left:0;
+                    top: 20px;
+                    bottom: 20px;
+                    width: 1px;
+                    background: @border-color;
+                }
+            }
+            &.active, &:hover{
+                > a{
+                    background: #f7f7f7;
+                    &:before,&:after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        width: 1px;
+                        background: @border-color;
+                    }
+                    &:before{
+                        left:0;
+                    }
+                    &:after{
+                        right:-1px;
+                    }
+                }
+
+            }
+        }
+    }
+    .section-register{
+        padding: 165px 0;
+    }
+    .block-required {
+        margin: 10px;
+        .form-control,.form-control.form-group{        
+            margin: 0
+        }
+    }
+    .event-content{
+        padding-right: 0;
+    }
+    //Contacts
+    .has-border-right{
+        position: relative;
+        &:after{
+            content: "";
+            background: @border-color;
+            width: 2px;
+            position: absolute;
+            bottom: 0;
+            right:28px;
+            top:-35px;
+        }
+    }
+
+    .block-callUs{
+        position: relative;
+        margin-top: 8px;
+        &:after{
+            content: "";
+            background: url("@{base-url}/box-arrow.png") no-repeat;
+            position: absolute;
+            top: 100%;
+            left: 50px;
+            width: 62px;
+            height: 45px;
+        }
+    }
+
+    .page-subheading{
+        width: 93%;
+    }
+}
+@media (min-width: 480px){
+    .event-day{
+        font-size: 70px;
+    }
+    .event-month{
+        font-size: 20px;
+        margin-top: -15px;
+        display: block;
+    }
+    .load-more{
+        button{
+            min-width: 350px;
+        }
+    }
+
+}
+@media (max-width: 1200px){
+    h3{
+        font-size: 22px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .intro-heading{
+        font-size: 40px;
+    }
+    .news-content{
+        p{
+            font-size: 18px;
+        }
+    }
+
+    #owl-news img {
+        max-height: 205px;
+    }
+    //Contact
+    .page-subheading{
+        font-size: 22px;
+    }
+    .form-control, .btn-light {
+        min-width: 289px;
+    }
+    .icon-contact{
+        img{
+            max-width: 40px;
+        }
+    }
+    .block-callUs{
+        padding: 10px;
+    }
+    .news-img{
+        min-height: 145px;
+    }
+    //Services
+    .text-std{
+        font-size: 20px;
+    }
+}
+@media (max-width: 992px){
+    h3{
+        font-size: 18px;
+    }
+    #owl-news img {
+        max-height: 165px;
+    }
+    .row{
+        margin: 0;
+    }
+    //contact
+    .el-number{
+        font-size: 30px;
+    }
+    .has-border-right{
+        .form-control,.block-required{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    h2,.section-feedback blockquote{
+        font-size: 30px;
+    }
+
+    .navbar-nav{
+        background: #f7f7f7;
+        border-top: 1px solid @border-color;
+        margin-bottom: 0;
+
+        a{
+            border-bottom: 1px solid @border-color;
+        }
+    }
+    .intro-content-img {
+        max-width: 300px;
+        font-size: 30px;
+    }
+    .intro-heading{
+        font-size: 30px;
+    }
+    .news-content{
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .grid-item{
+        width: 100%;
+        .text-center;
+    }
+    .touch-details{
+        .text-left;
+    }
+    .news-content p, .touch-grid p {
+        font-size: 15px;
+    }
+
+    //Contact
+    .block-callUs{
+        margin-top: 25px;
+        text-align: center;
+    }
+    .has-border-right,.block-contact{
+        padding: 0;
+    }
+    //Services
+    .block-approach,.block-about{
+        >div{
+            margin-bottom: 20px;
+        }
+    }
+    .event-item{
+        >div{
+            padding-left:0;
+        }
+    }
+    .process-steps{
+        .text-center;
+    }
+
+}
+
+@media (max-width: 640px){
+    #owl-news {
+        .owl-item{
+            margin-right: 0;
+        }
+    }
+    .section-feedback blockquote{
+        font-size: 20px;
+        max-width: 100%;
+    }
+
+    #owl-news img {
+        max-height: none;
+    }
+    .btn-sub{
+        display: block;
+        float: none!important;
+        margin-bottom: 10px;
+    }
+    .form-control, .btn-light {
+        min-width: auto;
+    }
+    .intro-content-img {
+        max-width: 100%;
+    }
+}
